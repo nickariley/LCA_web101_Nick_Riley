@@ -1,0 +1,76 @@
+
+body {
+    background: light;
+}
+
+header {
+    color: rgb(24, 241, 241);
+    background: grey;
+    height: auto;
+}
+
+footer {
+    color: rgb(24, 241, 241);
+    background: grey;
+    height: auto;
+}
+
+main {
+    background: lightgrey;
+    width: 60%;
+    margin: 5% auto;
+}
+
+article {
+    color: red;
+    margin: 1% auto;
+    border: 2px solid grey;
+    width: 60%;
+    background: inherit; /*inherit main background*/
+}
+
+div p {
+    color: black;
+}
+
+p {
+    color: rgb(26,252,3);
+}
+
+h1 {
+    color: blue !important; /*!important overrides color yellow*/
+    width: 60%;
+    margin: 5% auto;
+}
+
+h1 {
+    color: red;
+    width: 90%;
+    margin: 5% auto;
+}
+
+h1 {
+    color: yellow;
+    width: 100%;
+    margin: 5% auto;
+}
+
+article > h3 {
+    font-size: 1em;
+}
+
+article:hover {
+    background: grey;
+}
+
+article:hover > h3 {
+    color: blue;
+}
+
+p:hover::first-letter {
+    color: yellow;
+}
+
+.media {
+    color:yellowgreen;
+}
