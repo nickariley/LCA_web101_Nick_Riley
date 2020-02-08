@@ -151,7 +151,7 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
-    color: purple;
+    color: white;
 }
 
 li img {
@@ -163,7 +163,7 @@ footer p {
 }
 /*responsive styles start here*/
 
-@media (min-width: 1040px) 
+@media (min-width: 768px) 
 {
     .container {
         grid-template-areas: 
@@ -224,4 +224,10 @@ footer ul {
     padding: 2em 0;
 }
 
+}
+
+@media (max-width: 320px) {
+nav ul li {
+    font-size: .9em;
+}
 }
