@@ -1,0 +1,409 @@
+
+/*css reset starts here*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+/*css reset ends here*/
+/*css grids start here*/
+.header {
+    grid-area: header;
+}
+
+.clock-container {
+    grid-area: clock-container;
+}
+
+.to-do-container {
+    grid-area: to-do-container;
+}
+
+.greeting-container {
+    grid-area: greeting-container;
+}
+
+.calender-container {
+    grid-area: calender-container;
+}
+
+.calculator-container {
+    grid-area: calculator-container;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: .25fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "header"
+    "greeting-container"
+    "clock-container"
+    "to-do-container"
+    "calender-container"
+    "calculator-container";
+}
+/*css grids end here*/
+/*start calculator styles*/
+.calculator-box {
+    background: rgb(87, 86, 86); /*fallback color*/
+    background: rgb(87, 86, 86, .5);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 2px solid black;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.calculator-frame > input {
+    background: lime;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;    
+    box-shadow: none;
+    width: 100%;    
+    padding: 10px;
+    text-align: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.calculator-buttons {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.calculator-btn {
+    background: black;
+    border: 1px solid lime;
+    text-decoration-color: lime;
+    padding: 20px;
+    color: lime;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.calculator-btn:hover {
+    background: lime;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.is-clear:hover {
+    background: red;
+    color: black;
+    border: 1px solid black;
+}
+
+.is-clear {
+    grid-column: span 3;
+}
+
+.is-zero {
+    grid-column: span 3;
+}
+
+
+/*end calculator styles*/
+/*start calender styles*/
+
+.calender-box {
+    background: rgb(87, 86, 86); /*fallback color*/
+    background: rgb(87, 86, 86, .5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid black;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.input-calender-month-year {
+    background: rgb(87, 86, 86); /*fallback color*/
+    background: rgb(87, 86, 86, .5);
+    color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;    
+    box-shadow: none;   
+    padding: 1px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    grid-column: span 7;
+}
+
+.calender-buttons {
+    padding: 1px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 1px;
+}
+
+.calender-btn {
+    background: black;
+    border: 1px solid white;
+    text-decoration-color: lime;
+    padding: 1px;
+    color: white;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.calender-btn:hover {
+    background: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.calender-container {
+    background: rgb(87, 86, 86); /*fallback color*/
+    background: rgb(87, 86, 86, .5);
+}
+
+.is-opaque {
+    background: rgb(87, 86, 86); /*fallback color*/
+    background: rgb(87, 86, 86, .5);
+    color: rgb(87, 86, 86, .9);;
+}
+
+.calender-container ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  .calender-container  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  .calender-container  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+/* end calender styles*/
+
+/*start clock styles & layout*/
+.clock-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: top;
+    justify-items: center;
+    background: rgb(87, 86, 86); /*fallback color*/
+    background: rgb(87, 86, 86, .5);
+    
+}
+
+.clock-container ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lime;
+    opacity: 1; /* Firefox */
+  }
+  
+  .clock-container :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: lime;
+  }
+  
+  .clock-container ::-ms-input-placeholder { /* Microsoft Edge */
+    color: lime;
+  }
+
+.input-clock {
+    color: lime;
+    background: rgb(87, 86, 86); /*fallback color*/
+    background: rgb(87, 86, 86, .5);
+    border: 1px solid black;
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 3px;
+}
+/*end clock styles & layout*/
+/*start to-do styles and layout*/
+
+.to-do-container {
+    display: grid;
+    background: rgb(87, 86, 86); /*fallback color*/
+    background: rgb(87, 86, 86, .7);
+    grid-template-columns: 1fr;
+    grid-template-rows: (1fr, auto);
+}
+
+.to-do-box {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.input-to-do {
+    color: lime;
+    background: rgb(87, 86, 86); /*fallback color*/
+    background: rgb(87, 86, 86, .5);
+    border: 1px solid black;
+    padding: 1px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 3px;
+}
+
+.form-to-do {
+    color: lime;
+    background: rgb(87, 86, 86); /*fallback color*/
+    background: rgb(87, 86, 86, .5);
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 3px;
+}
+
+.to-do-container ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lime;
+    opacity: 1; /* Firefox */
+  }
+  
+  .to-do-container  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: lime;
+  }
+  
+  .to-do-container  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: lime;
+  }
+
+/* start greeting styles*/
+.greeting-container {
+    background: rgb(87, 86, 86); /*fallback color*/
+    background: rgb(87, 86, 86, .5);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-weight: 900;
+}
+/* end greeting styles*/
+/*start header styles*/
+.header {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 50px;
+    background: rgb(87, 86, 86); /*fallback color*/
+    background: rgb(87, 86, 86, 1);
+    color: lime;
+}
+/*end header styles*/
+/*start weather widget styles*/
+.weatherwidget-io {
+    margin-bottom: 3px;
+}
+/*end weather widget styles*/
+/*start media queries*/
+
+    @media screen and (min-width: 320px) {        
+    
+    .container {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: .25fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "header"
+        "greeting-container"
+        "clock-container"
+        "to-do-container"
+        "calender-container"
+        "calculator-container";
+    }
+}
+
+@media screen and (min-width: 768px) {
+        
+    .container {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .25fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "header header"
+        "greeting-container greeting-container"
+        "to-do-container clock-container"
+        "to-do-container calculator-container"
+        "calender-container calculator-container"
+        "calender-container calculator-container";
+    }
+}
+
+@media screen and (min-width: 992px) {
+        
+    .container {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 2fr 3fr 2fr;
+        grid-template-rows: .25fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "clock-container greeting-container calender-container"
+        "to-do-container greeting-container calculator-container";
+    }
+}
+/*end media queries*/
