@@ -1,0 +1,1567 @@
+
+/*css reset starts here*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+/*css reset ends here*/
+
+#header {
+    grid-area: header;
+}
+
+#body {
+    grid-area: body;
+}
+
+#fans {
+    grid-area: fans;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+#container {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .25fr 1fr .1fr;
+    grid-template-areas:
+    "header header header header header"
+    "body body body body body"
+    "footer footer footer footer footer";
+}
+
+#header {
+    margin: 0 auto;
+    padding: 44px 0 50px;
+    text-align: center;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#header .logo {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 340px;
+}
+
+#header a.logo img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#header ul {
+    margin: 0;
+    padding: 56px 0 0;
+}
+
+#header ul li {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0 19px;
+}
+
+#header ul li a {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#body {
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#body #featured {
+    margin: 0 0 13px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#body #featured img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#body #featured div {
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -171px;
+    padding: 0 0 0 470px;
+    position: absolute;
+    top: 50%;
+    text-align: left;
+    width: 490px;
+}
+
+#body #featured div h2 {
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    padding: 23px 27px 20px;
+    text-transform: uppercase;
+    width: 430px;
+
+}
+
+#body #featured div span {
+    background: #252525;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    margin: 7px 0;
+    padding: 12px 27px;
+    width: 400px;
+}
+
+#body #featured div a {
+    background: #0ba39c;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 0 0;
+    padding: 26px 27px 22px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 151px;
+}
+
+#body ul {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 24px 0 0;
+    width: 960px;
+
+}
+
+#body ul li {
+    display: block;
+    float: left;
+    margin: 0 10px 20px;
+    padding: 0;
+    width: 300px;
+}
+
+#body ul li a {
+    color: #000;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#body ul li a img {
+    border: 2px solid #1a1a1a;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#body > ul li a span {
+    display: block;
+    margin: 0;
+    padding: 33px 0 0;
+}
+
+#footer {
+    background: #252525;
+    margin: 0;
+    padding: 36px 0 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#footer div {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 960px;
+}
+
+#footer div p {
+    color: #fff;
+    float: left;
+    line-height: 44px;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+#footer div ul {
+    display: block;
+    float: right;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 256px;
+}
+
+#footer div ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    width: 44px;
+}
+
+#footer div ul li #twitter img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+
+#footer div ul li #facebook img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+
+#footer div ul li #google img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+
+#footer div ul li #pinterest img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+
+@media screen and (max-width: 320px) {
+        
+    #container {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .25fr 1fr .1fr;
+    grid-template-areas:
+    "header header header header header"
+    "body body body body body"
+    "footer footer footer footer footer";
+}
+
+#header {
+    margin: 0 auto;
+    padding: 8px 0 8px;
+    text-align: center;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: .5;
+}
+
+#header .logo {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 160px;
+}
+
+#header a.logo img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 160px;
+}
+
+#header ul {
+    margin: 0;
+    padding: 8px 0 0;
+}
+
+#header ul li {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0 6px;
+}
+
+#header ul li a {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#body {
+    margin: 0;
+    padding: 0 0 8px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#body #featured {
+    margin: 0 0 8px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#body #featured img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 320px auto;
+}
+
+#body #featured div {
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -171px;
+    padding: 80px 0 0 470px;
+    position: absolute;
+    top: 75%;
+    text-align: left;
+    width: 80px;
+}
+
+#body #featured div h2 {
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 500;
+    margin: 0 0 2px;
+    padding: 6px;
+    text-transform: uppercase;
+    width: 80px;
+
+}
+
+#body #featured div span {
+    background: #252525;
+    color: #fff;
+    display: inline-block;
+    font-size: 6px;
+    margin: 2px 0;
+    padding: 2px;
+    width: 60px;
+}
+
+#body #featured div a {
+    background: #0ba39c;
+    color: #fff;
+    display: inline-block;
+    font-size: 6px;
+    margin: 1px 0 0;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 45px;
+}
+
+#body ul {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 12px 0 0;
+    width: 320px;
+
+}
+
+#body ul li {
+    display: block;
+    float: left;
+    margin: 0 5px 10px;
+    padding: 0;
+    width: 95px;
+}
+
+#body ul li a {
+    color: #000;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#body ul li a img {
+    border: zpx solid #1a1a1a;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 95px;
+}
+
+#body > ul li a span {
+    display: block;
+    margin: 0;
+    padding: 6px 0 0;
+}
+
+#footer {
+    background: #252525;
+    margin: 0;
+    padding: 12px 0 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#footer div {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 320px;
+}
+
+#footer div p {
+    color: #fff;
+    float: left;
+    line-height: 10px;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+#footer div ul {
+    display: block;
+    float: right;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 320px;
+}
+
+#footer div ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    width: 12px;
+}
+
+#footer div ul li #twitter img {
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+
+}
+
+#footer div ul li #facebook img {
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+
+}
+
+#footer div ul li #google img {
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+
+}
+
+#footer div ul li #pinterest img {
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+
+}
+}
+
+@media screen and (min-width: 320px) {
+        
+    #container {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .25fr 1fr .1fr;
+    grid-template-areas:
+    "header header header header header"
+    "body body body body body"
+    "footer footer footer footer footer";
+}
+
+#header {
+    margin: 0 auto;
+    padding: 8px 0 8px;
+    text-align: center;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: .5;
+}
+
+#header .logo {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 160px;
+}
+
+#header a.logo img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 160px;
+}
+
+#header ul {
+    margin: 0;
+    padding: 8px 0 0;
+}
+
+#header ul li {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0 6px;
+}
+
+#header ul li a {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#body {
+    margin: 0;
+    padding: 0 0 8px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#body #featured {
+    margin: 0 0 8px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#body #featured img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 320px auto;
+}
+
+#body #featured div {
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -171px;
+    padding: 80px 0 0 470px;
+    position: absolute;
+    top: 75%;
+    text-align: left;
+    width: 80px;
+}
+
+#body #featured div h2 {
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 500;
+    margin: 0 0 2px;
+    padding: 6px;
+    text-transform: uppercase;
+    width: 80px;
+
+}
+
+#body #featured div span {
+    background: #252525;
+    color: #fff;
+    display: inline-block;
+    font-size: 6px;
+    margin: 2px 0;
+    padding: 2px;
+    width: 60px;
+}
+
+#body #featured div a {
+    background: #0ba39c;
+    color: #fff;
+    display: inline-block;
+    font-size: 6px;
+    margin: 1px 0 0;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 45px;
+}
+
+#body ul {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 12px 0 0;
+    width: 320px;
+
+}
+
+#body ul li {
+    display: block;
+    float: left;
+    margin: 0 5px 10px;
+    padding: 0;
+    width: 95px;
+}
+
+#body ul li a {
+    color: #000;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#body ul li a img {
+    border: zpx solid #1a1a1a;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 95px;
+}
+
+#body > ul li a span {
+    display: block;
+    margin: 0;
+    padding: 6px 0 0;
+}
+
+#footer {
+    background: #252525;
+    margin: 0;
+    padding: 12px 0 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#footer div {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 320px;
+}
+
+#footer div p {
+    color: #fff;
+    float: left;
+    line-height: 10px;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+#footer div ul {
+    display: block;
+    float: right;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 320px;
+}
+
+#footer div ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    width: 12px;
+}
+
+#footer div ul li #twitter img {
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+
+}
+
+#footer div ul li #facebook img {
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+
+}
+
+#footer div ul li #google img {
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+
+}
+
+#footer div ul li #pinterest img {
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+
+}
+}
+
+/*media query 768px - 992px*/
+@media screen and (min-width: 768px) {
+        
+    #container {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .25fr 1fr .1fr;
+    grid-template-areas:
+    "header header header header header"
+    "body body body body body"
+    "footer footer footer footer footer";
+}
+
+#header {
+    margin: 0 auto;
+    padding: 24px 0 25px;
+    text-align: center;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#header .logo {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 340px;
+}
+
+#header a.logo img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 340px;
+}
+
+#header ul {
+    margin: 0;
+    padding: 23px 0 0;
+}
+
+#header ul li {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+}
+
+#header ul li a {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#body {
+    margin: 0;
+    padding: 0 0 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#body #featured {
+    margin: 0 0 10px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#body #featured img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 768px auto;
+}
+
+#body #featured div {
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -171px;
+    padding: 0 0 0 470px;
+    position: absolute;
+    top: 60%;
+    text-align: left;
+    width: 245px;
+}
+
+#body #featured div h2 {
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 0 0 8px;
+    padding: 13px 15px 10px;
+    text-transform: uppercase;
+    width: 215px;
+
+}
+
+#body #featured div span {
+    background: #252525;
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    margin: 7px 0;
+    padding: 8px 15px;
+    width: 200px;
+}
+
+#body #featured div a {
+    background: #0ba39c;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 0 0;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+#body ul {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 12px 0 0;
+    width: 490px;
+
+}
+
+#body ul li {
+    display: block;
+    float: left;
+    margin: 0 5px 10px;
+    padding: 0;
+    width: 150px;
+}
+
+#body ul li a {
+    color: #000;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#body ul li a img {
+    border: zpx solid #1a1a1a;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+
+#body > ul li a span {
+    display: block;
+    margin: 0;
+    padding: 16px 0 0;
+}
+
+#footer {
+    background: #252525;
+    margin: 0;
+    padding: 36px 0 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#footer div {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 768px;
+}
+
+#footer div p {
+    color: #fff;
+    float: left;
+    line-height: 44px;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+#footer div ul {
+    display: block;
+    float: right;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 256px;
+}
+
+#footer div ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    width: 44px;
+}
+
+#footer div ul li #twitter img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+
+#footer div ul li #facebook img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+
+#footer div ul li #google img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+
+#footer div ul li #pinterest img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+}
+
+
+
+
+/*media query 992 and up*/
+
+@media screen and (min-width: 992px) {
+        
+    #container {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .25fr 1fr .1fr;
+    grid-template-areas:
+    "header header header header header"
+    "body body body body body"
+    "footer footer footer footer footer";
+}
+
+#header {
+    margin: 0 auto;
+    padding: 44px 0 50px;
+    text-align: center;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#header .logo {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 340px;
+}
+
+#header a.logo img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#header ul {
+    margin: 0;
+    padding: 56px 0 0;
+}
+
+#header ul li {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0 19px;
+}
+
+#header ul li a {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#body {
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#body #featured {
+    margin: 0 0 13px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#body #featured img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#body #featured div {
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -171px;
+    padding: 0 0 0 470px;
+    position: absolute;
+    top: 50%;
+    text-align: left;
+    width: 490px;
+}
+
+#body #featured div h2 {
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    padding: 20px 24px 17px;
+    text-transform: uppercase;
+    width: 400px;
+
+}
+
+#body #featured div span {
+    background: #252525;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin: 7px 0;
+    padding: 12px 27px;
+    width: 375px;
+}
+
+#body #featured div a {
+    background: #0ba39c;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    margin: 15px 0 0;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 125px;
+}
+
+#body ul {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 24px 0 0;
+    width: 960px;
+
+}
+
+#body ul li {
+    display: block;
+    float: left;
+    margin: 0 10px 20px;
+    padding: 0;
+    width: 300px;
+}
+
+#body ul li a {
+    color: #000;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#body ul li a img {
+    border: 2px solid #1a1a1a;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+#body > ul li a span {
+    display: block;
+    margin: 0;
+    padding: 33px 0 0;
+}
+
+#footer {
+    background: #252525;
+    margin: 0;
+    padding: 36px 0 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#footer div {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 960px;
+}
+
+#footer div p {
+    color: #fff;
+    float: left;
+    line-height: 44px;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+#footer div ul {
+    display: block;
+    float: right;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 256px;
+}
+
+#footer div ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    width: 44px;
+}
+
+#footer div ul li #twitter img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+
+#footer div ul li #facebook img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+
+#footer div ul li #google img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+
+#footer div ul li #pinterest img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+}
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+
+#container {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .25fr 1fr .1fr;
+    grid-template-areas:
+    "header header header header header"
+    "body body body body body"
+    "footer footer footer footer footer";
+}
+
+#header {
+    margin: 0 auto;
+    padding: 44px 0 50px;
+    text-align: center;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#header .logo {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 340px;
+}
+
+#header a.logo img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#header ul {
+    margin: 0;
+    padding: 56px 0 0;
+}
+
+#header ul li {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0 19px;
+}
+
+#header ul li a {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#body {
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#body #featured {
+    margin: 0 0 13px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#body #featured img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#body #featured div {
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -171px;
+    padding: 0 0 0 470px;
+    position: absolute;
+    top: 50%;
+    text-align: left;
+    width: 490px;
+}
+
+#body #featured div h2 {
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    padding: 23px 27px 20px;
+    text-transform: uppercase;
+    width: 430px;
+
+}
+
+#body #featured div span {
+    background: #252525;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    margin: 7px 0;
+    padding: 12px 27px;
+    width: 400px;
+}
+
+#body #featured div a {
+    background: #0ba39c;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 0 0;
+    padding: 26px 27px 22px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 151px;
+}
+
+#body ul {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 24px 0 0;
+    width: 960px;
+
+}
+
+#body ul li {
+    display: block;
+    float: left;
+    margin: 0 10px 20px;
+    padding: 0;
+    width: 300px;
+}
+
+#body ul li a {
+    color: #000;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#body ul li a img {
+    border: 2px solid #1a1a1a;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#body > ul li a span {
+    display: block;
+    margin: 0;
+    padding: 33px 0 0;
+}
+
+#footer {
+    background: #252525;
+    margin: 0;
+    padding: 36px 0 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#footer div {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 960px;
+}
+
+#footer div p {
+    color: #fff;
+    float: left;
+    line-height: 44px;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+#footer div ul {
+    display: block;
+    float: right;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 256px;
+}
+
+#footer div ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    width: 44px;
+}
+
+#footer div ul li #twitter img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+
+#footer div ul li #facebook img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+
+#footer div ul li #google img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+
+#footer div ul li #pinterest img {
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+
+}
+}
