@@ -337,6 +337,16 @@ html {
     color: black;
     font-weight: 900;
 }
+
+.image-greeting {
+    display: block;
+    max-width: 100%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
 /* end greeting styles*/
 /*start header styles*/
 .header {
