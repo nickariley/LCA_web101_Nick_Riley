@@ -1,0 +1,51 @@
+body {
+    width: 850px;
+    margin: 0 auto;
+}
+
+main {
+    margin: 0 auto;
+    height: 450px;
+    background-image: url(./nasaimg.jpg);
+    color: white;
+}
+
+section {
+    display: flex;
+    height: 324px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(224, 222, 222);
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+article {
+    width: 270px;
+    height: 324px;
+    background-color: rgb(224, 222, 222);
+    line-height: 1.5;
+}
+
+article h1 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#name {
+    width: 230px;
+}
+
+#message {
+    height: 75px;
+    width: 230px;
+}
+
+#send {
+    margin-top: 10px;
+    background-color: #4D4D4D;
+    font-weight: 900;
+    color: white;
+    padding: 5px 10px;
+    border: #4D4D4D solid 1px;
+}
