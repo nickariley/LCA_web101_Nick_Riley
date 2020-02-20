@@ -6,7 +6,7 @@ body {
 main {
     margin: 0 auto;
     height: 450px;
-    background-image: url(./nasaimg.jpg);
+    background-image: url(../images/nasaimg.jpg);
     color: white;
 }
 
