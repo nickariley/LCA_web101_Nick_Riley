@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trade Winds';
+  box-sizing: border-box;
+}
+
+header {
+  grid-area: header;
+  
+}
+
+.contact-grid {
+  grid-area: contactGrid;
+  justify-self: center;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #fff;
+  border-bottom: 4px solid #fff;
+  max-width: 1130px;
+  justify-self: center;
+  font-size: 22px;
+}
+
+h1 {
+  line-height: 220px;
+}
+
+
+body {
+  background: #232323;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: 'header'
+  'contactGrid';
+  grid-template-columns: 1fr;
+  grid-template-rows: .25fr .75fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.card {
+  background: rgb(128, 124, 124);
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  cursor: pointer;
+  border: #fff solid 4px;
+}
+
+.card-icon {
+  font-size: 28px;
+  background: #FFF;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.card:hover {
+  background: none;
+  color: #FFF;
+  transform: scale(1.6);
+}
+
+.card p {
+  margin-top: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  max-height: 0;
+  opacity: 0;
+  transition: 300ms linear;
+}
+
+.card:hover p {
+  max-height: 40px;
+  opacity: 1;
+}
+
+.card:scope {
+  max-height: 40px;
+  opacity: 1;
+}   
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+
+
+@media screen and (max-width: 768px) {
+.contact-info{
+  flex-direction: column;
+}
+
+.card{
+ width: 100%;
+  max-width: 300px;
+}
+
+header {
+  width: 100%;
+  max-width: 300px;
+  font-size: 18px;
+}
+
+h1{
+  line-height: 100px;
+  max-width: 300px;
+}
+
+.card{
+  width: 100%;
+  max-width: 300px;
+  margin:  10px 0;
+}
+
+}
