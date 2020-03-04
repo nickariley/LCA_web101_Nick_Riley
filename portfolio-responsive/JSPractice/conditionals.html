@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice Conditionals and Loops</title>
+</head>
+<body>
+    <h1>Project 1: Print Out Each Word</h1>
+    <p>Given an array of words, loop through the array and print out each word.</p>
+    <script>
+        const wordArr = ['waffle', 'whimper', 'sneeze', 'shindig', 'leopard', 'whisper', 'elegant']
+
+        const printOutWord = (arr) => {
+            // your code here
+            for (i = 0; i < wordArr.length; i++)
+            document.write((i+1) + ": " + wordArr[i] +"<br>");
+        }
+
+        //call the function
+        printOutWord(wordArr)
+    </script>
+
+    <!-- divider for next section  -->
+    <hr>
+
+    <h1>Add Numbers</h1>
+    <p>Given two numbers, return the sum of the two numbers.</p>
+    <script>
+        const addNums = (a, b) => {
+            return a + b;
+        }
+
+        var sum = addNums(3, 8) // => 11
+        document.write(sum)
+    </script>
+
+    <!-- divider for next section  -->
+    <hr>
+
+    <h1>Remove Zeros</h1>
+    <p>Given an array of numbers, create and return a new array with all '0's removed.</p>
+    <script>
+        const exampleArr = [1, 0, 9, 18, 3, 0, 0, 9, 70, 44, 0]
+
+        const removeZeros = (arr) => {
+       // for (var i = 0; i < arr.length; i++) {if ( arr[i] === 0) { arr.splice(i, 1); i--; }}
+       for (var i = arr.length - 1; i >= 0; i--) {if(arr[i] === 0) { arr.splice(i, 1)}  }}
+
+        removeZeros(exampleArr) // => [1, 9, 18, 3, 9, 70, 44]
+        document.write(exampleArr)
+        console.log(exampleArr)
+    </script>
+
+    <!-- divider for next section  -->
+    <hr>
+
+    <h1>Sum of Array Squared</h1>
+    <p>Given the array of numbers: [2, 3, 5, 6, 8] square each number, save them to a new array and return the sum of the new array.</p>
+
+    <script>
+        const myArr =[2, 3, 5, 6, 8]
+
+         const sumSquared = (arr) => {
+            var sum = 0, i = arr.length;
+            while (i--) {
+                sum += Math.pow(arr[i], 2);
+            } return sum;
+        }
+
+        sumSquared(myArr) // => 136
+        document.write(sumSquared([2, 3, 5, 6, 8]));
+      // console.log(sumSquared([2, 3, 5, 6, 8]))
+    </script>
+
+</body>
+</html>
