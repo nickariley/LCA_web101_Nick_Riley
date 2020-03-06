@@ -149,6 +149,12 @@ article {
     text-transform: uppercase;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
 }
+
+.text > button > a {
+    text-decoration: inherit;
+    color: #ffffff;
+}
+
 #inputForm {
     display: grid;
    
