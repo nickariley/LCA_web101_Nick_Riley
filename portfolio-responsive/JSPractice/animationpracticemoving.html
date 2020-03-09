@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #container {
+            width: 200px;
+            height: 200px;
+            background: green;
+            position: relative;
+        }
+        #box {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+        }
+        </style>
+        <div id="container">
+            <div id="box"> </div>
+        </div>
+        <script>
+            var t = setInterval(move, 500);
+            // starting position
+            var pos = 0; 
+            //our box element
+            var box = document.getElementById("box");
+        
+            function move() {
+                pos += 1;
+                box.style.left = pos+"px"; //px = pixels
+                //^original code 
+                box.style.top = pos+"px" //Nick Riley - added this to see if it would move diagonally - SUCCESSFUL
+                container.style.left = pos+"px" //Nick Riley - added this to see if the Container would move relative to its starting position - SUCCESSFUL
+                container.style.top = pos+"px" //Nick Riley - added this to see if the Container would move relative to its starting position - SUCCESSFUL
+                //^testing code
+            }
+        </script>
+</body>
+</html>

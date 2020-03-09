@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        
+   <h1 align= center>header1</h1>
+   <h1 align= center>header2</h1>
+   <h1 align= center>header3</h1>
+   <h1 align= center>header4</h1>
+   <h1 align= center>header5</h1>
+   
+   
+   <script>
+   
+       // make an array with the headers
+       var myArray = document.getElementsByTagName("h1");
+       // one variable to be displayed in the headers, and one for counting the array index (x)
+       var myNumber = 0;
+       var x = 0;
+       
+       // the function that steps through the headers and increases the numbers, one at a time
+       function count() {
+           
+           //starting with zero in the first header
+           myArray[x].innerHTML = myNumber;
+                
+                // step to next header, and increase the number by one
+                x++;
+                myNumber++;
+           
+                // after all headers (indexes) have been stepped through, start over with the first header
+                if(x == myArray.length){
+                    x = 0;
+                }
+       }; // end of function
+       
+       // call the function every 1 second (This is the part which Nikita Shamardak refers to in the comments, and it now looks the way it should!)
+       setInterval(count,1000);
+
+    </script>
+       
+       
+    </body>
+</html>
