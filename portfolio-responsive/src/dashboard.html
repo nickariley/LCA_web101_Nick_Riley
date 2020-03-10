@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/todo.css" />
+    <link rel="stylesheet" href="../styles/digitalclock.css">
 </head>
 <body>
     <div class="container">
@@ -14,18 +16,28 @@
     
             <div class="clock-container">
                 <div class="clock-box">
-                    <input class="input-clock" type="text" placeholder="11:30 AM"> 
+                    <div id ="clockdate">
+                        <div id="wrapper-clockdate">
+                        <div id="clock-large"></div>
+                        </div>
+                        </div>
                 </div>
                  
             </div>
-            <div class="to-do-container">
-                <div class="to-do-box">
-                <form action="" type="text" placeholder="new task item" class="form-to-do">Make Coffee!</form>
-                <input class="input-to-do" type="text" placeholder="Feed the Dog"> 
-                <input class="input-to-do" type="text" placeholder="Wash the Truck"> 
-                <input class="input-to-do" type="text" placeholder="Take out the Trash"> 
-                <input class="input-to-do" type="text" placeholder="Mow the Lawn"> 
-                <input class="input-to-do" type="text" placeholder="Drink Cold Beer"> 
+           <div class="to_do_container"> 
+                <div class="to_do_box">
+                    <div id="list_section">
+                        <h1 id="header">To-do list</h1>
+                        <ul>
+                          <li class="item">Buy movie tickets</li>
+                        </ul>
+                        <div id="newItemButton"><button href="#">new item</button></div>
+                        <form id="newItemForm">
+                          <input type="text" id="itemField" placeholder="Item" />
+                          <input type="submit" id="add" value="add" />
+                        </form>
+                      </div>
+
                 </div>
             </div>
             <div class="greeting-container">
@@ -131,6 +143,10 @@
             </div>
             <!--End Calculator HTML-->
     </div>
+
     
+    <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+    <script src="../js/todo.js"></script>
+    <script src="../js/digitalclock.js"></script>
 </body>
 </html>

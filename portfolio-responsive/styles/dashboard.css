@@ -295,10 +295,10 @@ html {
     
 }
 
-.input-to-do {
+/*.input-to-do {
     color: lime;
     background: rgb(87, 86, 86); /*fallback color*/
-    background: rgb(87, 86, 86, .5);
+    /*background: rgb(87, 86, 86, .5);
     border: 1px solid black;
     padding: 1px;
     text-align: center;
@@ -306,32 +306,32 @@ html {
     font-weight: 900;
     margin: 3px;
 }
-
-.form-to-do {
+*/
+/*.form-to-do {
     color: lime;
     background: rgb(87, 86, 86); /*fallback color*/
-    background: rgb(87, 86, 86, .5);
+   /* background: rgb(87, 86, 86, .5);
     border: 1px solid black;
     padding: 10px;
     text-align: center;
     font-size: 15px;
     font-weight: 900;
     margin: 3px;
-}
+}*/
 
-.to-do-container ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: lime;
+/*.to-do-container ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+ /*   color: lime;
     opacity: 1; /* Firefox */
-  }
-  
-  .to-do-container  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+ /* }
+  */
+ /* .to-do-container  :-ms-input-placeholder { /* Internet Explorer 10-11 *//*
     color: lime;
   }
   
   .to-do-container  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: lime;
-  }
-
+  /*  color: lime;
+  /*}
+*/
 /* start greeting styles*/
 .greeting-container {
     background: rgb(87, 86, 86); /*fallback color*/
