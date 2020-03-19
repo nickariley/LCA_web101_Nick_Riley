@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="../styles/digitalclock.css">
 </head>
 <body>
+    <!--Start Header-->
     <div class="container">
         <div class="header">
             <header class="header-content">Dashboard</header>
         </div>
-        
-    
+        <!--End Header-->
+            <!--Start Digital Clock: Credit SoloLearn User: Ahsan-->
             <div class="clock-container">
                 <div class="clock-box">
                     <div id ="clockdate">
                         <div id="wrapper-clockdate">
                         <div id="clock-large"></div>
                         <button onclick="getLocation()">Get Location!</button>
-  <p id="my-coordinates"></p>
+                        <p id="my-coordinates"></p>
                         </div>
                         </div>
                 </div>
-                 
             </div>
+            <!--End Digital Clock: Credit SoloLearn User: Ahsan -->
+            <!--Start To Do-->
            <div class="to_do_container"> 
                 <div class="to_do_box">
                     <div id="list_section">
@@ -42,23 +44,23 @@
 
                 </div>
             </div>
+            <!--End To Do-->
+            <!--Start Greeting-->
             <div class="greeting-container">
                 <img class="image-greeting" src="../images/Diesel-Ball-BethyCreek.jpeg" alt="Diesel-Ball-BethyCreek">
                 <div class="greeting-content">
                     Hello! <br> Welcome to my dashboard page. <br> This page has a Clock, TO-DO-List, Calender, Calculator and Weather Widget.
                 </div>
-
+                <!--End Greeting-->
+                <!--Start Weather Widget-->
                 <a class="weatherwidget-io" href="https://forecast7.com/en/33d58n101d86/lubbock/" data-label_1="LUBBOCK" data-label_2="WEATHER" data-theme="original" >LUBBOCK WEATHER</a>
                 <script>
                 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
                 </script>
-
+                <!--End Weather Widget-->
             </div>
-
-            <div class="calender-container">
-
-                 <!--Start Calculator HTML-->
-            
+                 <!--Start Calender HTML-->
+            <div class="calender-container">        
                 <div class="calender-box">
                     <div class="calender-frame">                        
                         <div class="calender-buttons">
