@@ -34,17 +34,17 @@
   }
   
   [data-color="green"] {
-    height: 33px;
+    height: 43px;
     background-color: green;
   }
   
   [data-color="red"] {
-    height: 33px;
+    height: 53px;
     background-color: red;
   }
   
   [data-color="yellow"] {
-    height: 33px;
+    height: 63px;
     background-color: yellow;
   }
   
